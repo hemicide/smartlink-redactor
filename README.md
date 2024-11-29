@@ -24,7 +24,7 @@ Scaffold-DbContext "Host=localhost;Port=5432;Database=postgres;Username=postgres
 
 ## Сборка
 
-Создание Docker-образа [Dockerfile](/Redirector/Dockerfile)
+Создание Docker-образа [Dockerfile](/Redactor.WebAPI/Dockerfile)
 
 Environment variables:
 
