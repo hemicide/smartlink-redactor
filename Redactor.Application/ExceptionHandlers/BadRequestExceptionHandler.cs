@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Diagnostics;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using Redactor.Application.Exceptions;
 
-namespace Redactor.WebAPI.ExceptionHandlers
+namespace Redactor.Application.ExceptionHandlers
 {
     public class BadRequestExceptionHandler : IExceptionHandler
     {

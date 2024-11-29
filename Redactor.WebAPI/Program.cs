@@ -1,11 +1,10 @@
+using Redactor.Application.ExceptionHandlers;
 using Redactor.Application.Interfaces;
+using Redactor.Application.Middleware;
 using Redactor.Application.Profiles;
 using Redactor.Application.Services;
-using Redactor.ExceptionHandlers;
-using Redactor.WebAPI.Swagger;
-using Redactor.WebAPI.ExceptionHandlers;
-using Redactor.WebAPI.Middleware;
 using Redactor.Persistence;
+using Redactor.WebAPI.Swagger;
 
 var builder = WebApplication.CreateBuilder(args);
 

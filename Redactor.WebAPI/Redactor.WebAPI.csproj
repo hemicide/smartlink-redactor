@@ -26,12 +26,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Redactor.Application.Validators\Browser\Redactor.Application.Validators.Browser.csproj" />
+    <ProjectReference Include="..\Redactor.Application.Validators\DateRange\Redactor.Application.Validators.DateRange.csproj" />
+    <ProjectReference Include="..\Redactor.Application.Validators\Device\Redactor.Application.Validators.Device.csproj" />
+    <ProjectReference Include="..\Redactor.Application.Validators\Language\Redactor.Application.Validators.Language.csproj" />
     <ProjectReference Include="..\Redactor.Application\Redactor.Application.csproj" />
     <ProjectReference Include="..\Redactor.Persistence\Redactor.Repository.csproj" />
-    <ProjectReference Include="..\Redactor.WebAPI.Validators\Redactor.WebAPI.Validators.Browser\Redactor.Application.Validators.Browser.csproj" />
-    <ProjectReference Include="..\Redactor.WebAPI.Validators\Redactor.WebAPI.Validators.DateRange\Redactor.Application.Validators.DateRange.csproj" />
-    <ProjectReference Include="..\Redactor.WebAPI.Validators\Redactor.WebAPI.Validators.Device\Redactor.Application.Validators.Device.csproj" />
-    <ProjectReference Include="..\Redactor.WebAPI.Validators\Redactor.WebAPI.Validators.Language\Redactor.Application.Validators.Language.csproj" />
   </ItemGroup>
 
 </Project>

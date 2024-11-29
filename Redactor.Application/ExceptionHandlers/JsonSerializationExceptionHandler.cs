@@ -1,27 +1,29 @@
 ﻿using Microsoft.AspNetCore.Diagnostics;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
-namespace Redactor.ExceptionHandlers
+namespace Redactor.Application.ExceptionHandlers
 {
-    public class JsonReaderExceptionHandler : IExceptionHandler
+    public class JsonSerializationExceptionHandler : IExceptionHandler
     {
         private readonly ILogger<JsonReaderExceptionHandler> _logger;
 
-        public JsonReaderExceptionHandler(ILogger<JsonReaderExceptionHandler> logger) => _logger = logger;
+        public JsonSerializationExceptionHandler(ILogger<JsonReaderExceptionHandler> logger) => _logger = logger;
 
         public async ValueTask<bool> TryHandleAsync(HttpContext context, Exception exception, CancellationToken cancellationToken)
         {
-            if (exception is not JsonReaderException jsonReaderException)
+            if (exception is not JsonSerializationException jsonSerializationException)
                 return false;
 
-            _logger.LogError(jsonReaderException, $"Exception occurred: {jsonReaderException.Message}");
+            _logger.LogError(jsonSerializationException, $"Exception occurred: {jsonSerializationException.Message}");
 
             var problemDetails = new ProblemDetails
             {
                 Status = StatusCodes.Status400BadRequest,
                 Title = "Bad Request",
-                Detail = jsonReaderException.Message
+                Detail = jsonSerializationException.Message
             };
 
             context.Response.StatusCode = problemDetails.Status.Value;

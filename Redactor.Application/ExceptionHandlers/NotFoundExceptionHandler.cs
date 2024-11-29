@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.Extensions.Logging;
 using Redactor.Application.Exceptions;
 
-namespace Redactor.WebAPI.ExceptionHandlers
+namespace Redactor.Application.ExceptionHandlers
 {
     public class NotFoundExceptionHandler : IExceptionHandler
     {

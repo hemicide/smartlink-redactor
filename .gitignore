@@ -19,3 +19,12 @@
 /Redactor.WebAPI.Validators/Redactor.WebAPI.Validators.Device/bin
 /Redactor.WebAPI.Validators/Redactor.WebAPI.Validators.Language/obj
 /Redactor.WebAPI.Validators/Redactor.WebAPI.Validators.Language/bin
+/.vs
+/Redactor.Application.Validators/Browser/obj
+/Redactor.Application.Validators/Browser/bin
+/Redactor.Application.Validators/DateRange/obj
+/Redactor.Application.Validators/DateRange/bin
+/Redactor.Application.Validators/Device/obj
+/Redactor.Application.Validators/Device/bin
+/Redactor.Application.Validators/Language/obj
+/Redactor.Application.Validators/Language/bin

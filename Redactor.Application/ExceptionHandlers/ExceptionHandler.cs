@@ -1,11 +1,10 @@
 ﻿using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Mvc;
-using Redactor.Application.Exceptions;
-using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Routing;
+using Microsoft.Extensions.Logging;
 
-namespace Redactor.WebAPI.ExceptionHandlers
+namespace Redactor.Application.ExceptionHandlers
 {
     public class ExceptionHandler : IExceptionHandler
     {

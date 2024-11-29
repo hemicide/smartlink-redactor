@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Diagnostics;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using Redactor.Application.Exceptions;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace Redactor.WebAPI.ExceptionHandlers
+namespace Redactor.Application.ExceptionHandlers
 {
     public class ValidationExceptionHandler : IExceptionHandler
     {

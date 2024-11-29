@@ -1,10 +1,12 @@
-﻿using Newtonsoft.Json;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
+using Newtonsoft.Json;
 using Redactor.Application.DTO;
 using Redactor.Application.Exceptions;
 using Redactor.Application.Interfaces;
 using System.Text.RegularExpressions;
 
-namespace Redactor.WebAPI.Middleware
+namespace Redactor.Application.Middleware
 {
     public class RequestBodyValidationMiddleware
     {
